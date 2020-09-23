@@ -1,0 +1,10 @@
+def hanoi(n, o, d, a):
+	if n == 1:
+		print(o+" -> "+d)
+	else:
+		hanoi(n-1, o, a, d)
+		print(o+" -> "+d)
+		hanoi(n-1, a,d,o)
+
+
+hanoi(5, "O", "D", "A")
